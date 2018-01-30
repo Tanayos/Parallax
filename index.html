@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Parallax</title>
+</head>
+<body>
+
+
+    <div id="container" class="container">
+		<div id="scene" class="scene">
+			<div data-depth="0.60" class="nuage"><img src="asset/images/nuage.png"></div>
+			<div data-depth="0.50" class="montagne"><img src="asset/images/montagne.png"></div>
+    		<div data-depth="0.40" class="foret"><img src="asset/images/foret.png"></div>
+            <div data-depth="0.35" class="marcheur2"><img src="asset/images/marcheur2.png"></div>
+			<div data-depth="0.30" class="marcheur"><img src="asset/images/marcheur.png"></div>
+            <div data-depth="0.15" class="throne"><img src="asset/images/throne.png"></div>
+			<div data-depth="0.10" class="moi"><img src="asset/images/parallax-moi.png"></div>
+		</div>
+	</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+
+    // Pretty simple huh?
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+    </script>
+</body>
+</html>
